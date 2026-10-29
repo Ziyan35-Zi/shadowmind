@@ -1,0 +1,9 @@
+export type ModuleId='A'|'B'|'C'|'D'|'E';
+export type Difficulty='Beginner'|'Intermediate'|'Advanced';
+export type Reference={id:string;title:string;url:string;kind:'Textbook'|'Research'|'Guidance';verification:'Not checked'|'Blocked by cloud network'|'URL reachable';note:string};
+export type Question={id:string;lessonId:string;category:ModuleId;difficulty:Difficulty;prompt:string;options:string[];correct:number;explanation:string};
+export type AcademyLesson={id:string;number:number;module:ModuleId;title:string;status:'full';definition:string;explanation:string;mechanism:string;examples:[string,string];dialogue:[string,string,string];notice:string;not:string;consequences:string;tips:string;alternative:string;takeaways:[string,string,string];check:Omit<Question,'id'|'lessonId'|'category'>;related:string[];references:string[];evidence:string};
+export type Conversation={id:string;lessonId:string;category:string;context:string;dialogue:string[];question:string;options:string[];correct:number;explanation:string;warning:string;uncertain:string;response:string};
+export type Experiment={id:string;lessonId?:string;title:string;intro:string;prompt:string;options:string[];outcomes:string[];application:string;limitations:string};
+export type ToolkitEntry={id:string;category:string;situation:string;wording:string;why:string;limitations:string;safer:string};
+export type GlossaryEntry={id:string;term:string;definition:string;example:string;category:string;related:string[];difficulty:Difficulty};
