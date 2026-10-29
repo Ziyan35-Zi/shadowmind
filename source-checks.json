@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-29T15:19:22.406Z",
+  "results": [
+    {
+      "url": "https://openstax.org/details/books/psychology-2e",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1177/0003122419874843",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1080/1047840X.2014.940781",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/controlling-or-coercive-behaviour-statutory-guidance-framework",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Assertiveness",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1126/science.185.4157.1124",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://www.ftc.gov/reports/bringing-dark-patterns-light",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1080/10926771.2017.1320777",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1080/00332747.1956.11023049",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.chb.2013.02.014",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1037/h0023552",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1037/h0076284",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.2307/1914185",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1126/science.7455683",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1016/0749-5978(85)90049-4",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    },
+    {
+      "url": "https://doi.org/10.1037/h0071663",
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403"
+    }
+  ]
+}

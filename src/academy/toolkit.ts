@@ -1,0 +1,35 @@
+import type {ToolkitEntry} from './types';
+type Row=[string,string,string,string];
+const rows:Row[]=[
+['Setting personal boundaries','A friend calls during study time.','I am studying now. I can talk at six for fifteen minutes.','Names a limit and a feasible alternative.'],
+['Setting personal boundaries','A roommate borrows belongings without asking.','Please ask before borrowing these. I will keep them in my room for now.','Connects a request to an action within your control.'],
+['Setting personal boundaries','Someone repeatedly comments on your body.','I do not want comments about my body. Let’s change the topic.','Names the specific conduct rather than attacking character.'],
+['Handling emotional pressure','A distressed friend wants a promise of constant access.','I care about you. I cannot be available all night; let’s identify other support.','Acknowledges distress without an unsustainable commitment.'],
+['Handling emotional pressure','An argument becomes overwhelming.','I need a pause. Can we return to this at seven?','Offers a return time instead of an unexplained withdrawal.'],
+['Handling emotional pressure','Someone demands an immediate emotional answer.','I need time to understand how I feel before answering.','Creates room between a feeling and a decision.'],
+['Responding to guilt-based requests','Past favours are invoked to demand money.','I appreciate what you did. I cannot lend money this month.','Appreciation does not become unlimited obligation.'],
+['Responding to guilt-based requests','A relative equates attendance with love.','I love you and cannot travel this weekend. I can call on Sunday.','Separates affection from agreement with one request.'],
+['Responding to guilt-based requests','A colleague asks you to break a rule as a favour.','I cannot share confidential files. I can help find the approved request route.','Offers help without violating another person’s rights.'],
+['Dealing with rushed decisions','A seller gives a short countdown.','I will not decide before reading the total cost and cancellation terms.','Uses material information instead of urgency as the criterion.'],
+['Dealing with rushed decisions','A group wants an instant vote on a complex plan.','Could we review the written options before voting tomorrow?','Allows checking rather than following the first speaker.'],
+['Dealing with rushed decisions','Someone wants you to sign an unfamiliar document.','I need a copy and independent advice before signing.','Creates a review opportunity for a consequential decision.'],
+['Recognising misleading claims','A product has dramatic testimonials.','What independent evidence supports the specific benefit being promised?','Distinguishes selected stories from a tested claim.'],
+['Recognising misleading claims','A headline reports a doubled risk without numbers.','What are the absolute numbers and the comparison period?','Asks for the denominator needed to interpret relative risk.'],
+['Recognising misleading claims','A spokesperson has unclear credentials.','Is their expertise relevant to this claim, and do they have a financial interest?','Checks relevance and conflicts without dismissing expertise itself.'],
+['Respecting consent','A friend declines a group photo.','That is okay. We can take it without you and will not post your image.','Makes refusal ordinary and follows through.'],
+['Respecting consent','Someone changes their mind about a shared activity.','Thanks for telling me. We can stop and discuss another option.','Treats consent as ongoing rather than a debt.'],
+['Respecting consent','You want to share another person’s story.','May I share this, with whom, and what details should stay private?','Makes the scope of permission explicit.'],
+['Managing interpersonal conflict','Two people recall a plan differently.','I remember it differently. Shall we check the message together?','Supports checking without humiliating either person.'],
+['Managing interpersonal conflict','A discussion includes insults.','I want to discuss the issue, but I will pause if insults continue.','Keeps disagreement separate from personal attacks.'],
+['Managing interpersonal conflict','You made a mistake that affected a teammate.','I missed the deadline. Here is what I can repair and how I will update you.','Accepts responsibility and provides a concrete repair.'],
+['Seeking support','Work pressure may involve retaliation.','Could we discuss the policy and confidential options before I take action?','Seeks process information without an immediate confrontation.'],
+['Seeking support','A friend describes controlling behaviour.','I believe this is upsetting. What kind of support would feel useful and safe?','Preserves their agency instead of directing a risky response.'],
+['Seeking support','You are unsure whether a relationship is safe.','I would like confidential help thinking through my options.','You do not need a perfect label before requesting support.'],
+['Digital safety','A message asks for an authentication code.','I will not share codes. I will contact the service through its official app.','Uses an independent channel rather than the sender’s link.'],
+['Digital safety','An online acquaintance requests urgent payment.','I need to verify this through a contact method I already trust.','Urgency does not replace identity checking.'],
+['Digital safety','A community asks for personal documents publicly.','Why is this needed, who can see it, and is there a secure alternative?','Checks purpose and exposure before disclosure.'],
+['Ethical communication','You recommend a product you profit from.','I receive a referral fee. Here are alternatives and the limits of my experience.','Discloses a relevant interest and makes comparison possible.'],
+['Ethical communication','A student asks a difficult question.','I do not know enough to answer confidently. Let’s find a reliable source.','Models calibrated uncertainty instead of invented authority.'],
+['Ethical communication','You ask a subordinate for optional help.','This is outside your role, and declining will not affect evaluation. I can ask elsewhere.','Addresses implicit pressure; actual follow-through is essential.']
+];
+export const toolkit:ToolkitEntry[]=rows.map(([category,situation,wording,why],i)=>({id:`tool-${i+1}`,category,situation,wording,why,limitations:'Suggested wording is an educational example, not a guarantee of agreement, protection, or a particular outcome. Adapt it to your responsibilities and circumstances.',safer:category==='Digital safety'?'If an account may be compromised, use a trusted device and the provider’s official recovery process. Do not reply further simply to test a suspicious sender.':'If refusal or confrontation could trigger retaliation, loss of housing, or violence, seek confidential local support and consider a safer plan before using a script.'}));
